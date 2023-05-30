@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="container mx-auto flex justify-center items-center">
+        <div class='flex flex-col justify-center gap-5 bg-blue-100 w-full h-[800px] border-2 rounded-b-2xl shadow-md shadow-blue-700'>
+            <h1 class='text-center font-bold text-blue-500 text-3xl mb-10'><a class="hover:shadow-md hover:shadow-indigo-500 border-2 bg-white rounded-2xl py-2 px-5">Ваша оценка поможет нам стать лучше!</a></h1>
+            <div class='rating flex flex-row justify-center gap-3 relative'>
+                <div
+                    class='w-14 h-3 rounded-md bg-gray-300 transition-all duration-200 cursor-pointer flex flex-row justify-center'>
+                    <p class='text-2xl mt-6 hidden select-none pointer-events-none'>🤨</p>
+                </div>
+                <div
+                    class='w-14 h-3 rounded-md bg-gray-300 transition-all duration-200 cursor-pointer flex flex-row justify-center '>
+                    <p class='text-3xl mt-6 hidden select-none pointer-events-none'>🙂</p>
+                </div>
+                <div
+                    class='w-14 h-3 rounded-md bg-gray-300 transition-all duration-200 cursor-pointer flex flex-row justify-center '>
+                    <p class='text-4xl mt-6 hidden select-none pointer-events-none'>😊</p>
+                </div>
+                <div
+                    class='w-14 h-3 rounded-md bg-gray-300 transition-all duration-200 cursor-pointer flex flex-row justify-center '>
+                    <p class='text-5xl mt-6 hidden select-none pointer-events-none'>😚</p>
+                </div>
+                <div
+                    class='w-14 h-3 rounded-md bg-gray-300 transition-all duration-200 cursor-pointer flex flex-row justify-center '>
+                    <p class='text-6xl mt-6 hidden select-none pointer-events-none'>😍</p>
+                </div>
+            </div>
+        <div class="flex justify-center items-center mt-14"><button class="mt-4 w-1/6 h-10 text-white bg-blue-500 rounded-2xl border-2 hover:shadow-md hover:shadow-indigo-500 lg:text-2xl "><a href="./page1.html">НА НАЧАЛО</a></button>
+        </div>
+        </div>
+    </header>
+    
+    <script src="./starUS.js">
+    </script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+  </head>
+  <body>
+    <section class="text-gray-600 body-font relative bg-blue-100 container mx-auto border-2 rounded-b-2xl shadow-md shadow-blue-700">
+      <div class="container py-24 mx-auto">
+        <div class="flex justify-center items-center text-center w-full mb-10">
+          <div>
+            <h1 class="text-gray-900 text-4xl title-font font-bold mb-4 sm:text-center lg:text-center">
+            Политика конфиденциальности
+          </h1>
+          <div class="flex justify-center items-center">
+            <div><a class="lg:w-2/3 text-center leading-relaxed text-2xl">
+                - определяет основные цели и условия обработки персональных данных Пользователей Сайта <br> и сведения о реализуемых требованиях к защите персональных данных Пользователей Сайта. 
+              </a>
+              <p class="mx-auto leading-relaxed text-2xl mt-5">
+                Для более подробной информации вы можете оставить заявку.
+            </p></div>
+          </div>
+        </div>
+        </div>
+
+        <div class="p-2 w-full">
+          <button
+            class="flex mx-auto mb-5 text-white bg-indigo-400 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-500 rounded-2xl text-lg hover:shadow-2xl shadow-blue-900"
+            id="showForm"
+          >
+            Оставить заявку
+          </button>
+        </div>
+
+        <div id="showAndHide" class="lg:w-1/2 md:w-2/3 mx-auto hidden">
+          <div class="flex flex-wrap -m-2">
+            <div class="p-2 w-1/2">
+              <div class="relative">
+                <label for="name" class="leading-7 text-sm text-gray-600"
+                  ></label
+                >
+                <input
+                placeholder="Enter Your Name"
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="w-full hover:shadow-md hover:shadow-indigo-500 bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                />
+              </div>
+            </div>
+            <div class="p-2 w-1/2">
+              <div class="relative">
+                <label for="name" class="leading-7 text-sm text-gray-600"
+                  ></label
+                >
+                <input
+                placeholder="Enter Your Second Name"
+                  type="text"
+                  id="SecondName"
+                  name="SecondName"
+                  class="w-full hover:shadow-md hover:shadow-indigo-500 bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                />
+              </div>
+            </div>
+            <div class="p-2 w-full">
+              <div class="relative">
+                <label for="email" class="leading-7 text-sm text-gray-600"
+                  ></label
+                >
+                <input
+                placeholder="Enter Your Email address please..."
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out hover:shadow-md hover:shadow-indigo-500"
+                />
+              </div>
+            </div>
+            <div class="p-2 w-full">
+              <div class="relative">
+                <label for="message" class="leading-7 text-sm text-gray-600"
+                  ></label
+                >
+                <textarea
+                placeholder="You can enter here your Message..."
+                  id="message"
+                  name="message"
+                  class="w-full hover:shadow-md hover:shadow-indigo-500 bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                ></textarea>
+              </div>
+            </div>
+            <div class="p-2 w-full flex justify-center gap-10">
+              <button
+                type="button"
+                class="inline-block hover:shadow-md hover:shadow-indigo-500 rounded-2xl bg-primary px-6 pt-2.5 pb-2 text-lg font-medium uppercase leading-normal text-white bg-indigo-500 w-1/4"
+                data-te-toggle="modal"
+                data-te-target="#exampleModal"
+                data-te-ripple-init
+                data-te-ripple-color="light"
+                id="sendMessage"
+                onclick='alert("Спасибо за оставленную заявку!.")'
+              >
+                Отправить
+              </button>
+              <button class="inline-block hover:shadow-md hover:shadow-indigo-500 rounded-2xl bg-primary px-6 pt-2.5 pb-2 text-lg font-medium uppercase leading-normal text-white bg-indigo-500 w-1/4"><a href="./page1.html">На начало</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div
+      data-te-modal-init
+      class="fixed top-0 left-0 z-[1055] bg-gray-200 hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div
+        data-te-modal-dialog-ref
+        class="pointer-events-none relative w-auto translate-y-[-50px] opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:max-w-[500px]"
+      >
+        <div
+          class="min-[576px]:shadow-[0_0.5rem_1rem_rgba(#000, 0.15)] pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-lg outline-none"
+        >
+          <div
+            class="flex flex-shrink-0 items-center justify-end rounded-t-md p-4 dark:border-opacity-50"
+          >
+            <button
+              type="button"
+              class="box-content rounded-none border-none hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
+              data-te-modal-dismiss
+              aria-label="Close"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="h-6 w-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="relative flex justify-center items-center p-4" data-te-modal-body-ref>
+            <div>
+              <p class="text-center text-2xl">⭐️⭐️⭐️⭐️⭐️</p>
+            <h1 class="uppercase text-center mt-3">Спасибо Вам за заявку.</h1>
+            <p class="uppercase text-center mt-3">с вами скоро свяжуться наши специалисты!</p>
+            <div class="flex justify-center items-center">
+              <button class="w-52 h-10 text-lg bg-blue-300 rounded-lg text-center shadow-md mt-2 hover:shadow-lg hover:shadow-indigo-600"><a href="./starUS.html">Оцените нас</a></button>
+            </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-shrink-0 flex-wrap items-center justify-end rounded-b-md p-4 dark:border-opacity-50"
+          >
+            <button
+              type="button"
+              class="inline-block rounded bg-primary-100 px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-primary-accent-100 focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200"
+              data-te-modal-dismiss
+              data-te-ripple-init
+              data-te-ripple-color="light"
+            >
+              <a href="./page1.html">Close</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./app-button.js"></script>
+
+  </body>
+</html>
